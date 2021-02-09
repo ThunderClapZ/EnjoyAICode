@@ -803,8 +803,8 @@
                 [
                     "patrollineTurn",
                     "k_middle",
-                    "30",
-                    "-30"
+                    "15",
+                    "-15"
                 ],
                 [
                     "call",
@@ -847,10 +847,26 @@
                     "30"
                 ],
                 [
-                    "patrollineTurn",
-                    "k_middle",
-                    "15",
-                    "-15"
+                    "controlWait",
+                    "0.3"
+                ],
+                [
+                    "action_d_motor_distance_std",
+                    "A",
+                    "20",
+                    "B",
+                    "20",
+                    "250"
+                ],
+                [
+                    "controlWait",
+                    "0.2"
+                ],
+                [
+                    "call",
+                    "runDistance 距离 %n 功率 %n",
+                    "80",
+                    "15"
                 ],
                 [
                     "call",
@@ -868,7 +884,11 @@
                     "action_motor_distance_std",
                     "C",
                     "20",
-                    "350"
+                    "360"
+                ],
+                [
+                    "controlWait",
+                    "0.5"
                 ],
                 [
                     "call",
@@ -897,13 +917,13 @@
                 [
                     "call",
                     "runDistance 距离 %n 功率 %n",
-                    "120",
+                    "100",
                     "10"
                 ],
                 [
                     "action_motor_distance_std",
                     "D",
-                    "40",
+                    "10",
                     "400"
                 ]
             ]
