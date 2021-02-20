@@ -328,8 +328,8 @@
             ]
         ],
         [
-            525,
-            249,
+            516,
+            244,
             [
                 [
                     "main"
@@ -624,23 +624,34 @@
                 [
                     "call",
                     "findPort5 %n",
-                    "-30"
+                    "-15"
+                ],
+                [
+                    "call",
+                    "runDistance 距离 %n 功率 %n",
+                    "250",
+                    "15"
                 ],
                 [
                     "controlWait",
                     "0.2"
                 ],
                 [
-                    "patrollineTurn",
-                    "k_middle",
-                    "-30",
-                    "30"
+                    "call",
+                    "findPort5 %n",
+                    "-15"
+                ],
+                [
+                    "call",
+                    "runDistance 距离 %n 功率 %n",
+                    "1000",
+                    "15"
                 ],
                 [
                     "patrollineInterroad",
-                    "k_left",
+                    "k_right",
                     "30",
-                    "0.5"
+                    "0.3"
                 ],
                 [
                     "patrollineTurn",
@@ -649,34 +660,18 @@
                     "-15"
                 ],
                 [
-                    "patrollineInterroad",
-                    "k_T_intersection",
-                    "30",
-                    "0.1"
-                ],
-                [
-                    "patrollineTurn",
-                    "k_middle",
-                    "10",
-                    "-10"
-                ],
-                [
                     "call",
                     "findPort1 %n",
                     "30"
                 ],
                 [
-                    "action_d_motor_distance_std",
-                    "A",
-                    "10",
-                    "B",
-                    "10",
-                    "40"
+                    "controlWait",
+                    "0.2"
                 ],
                 [
                     "call",
                     "runDistance 距离 %n 功率 %n",
-                    "300",
+                    "270",
                     "15"
                 ],
                 [
@@ -706,7 +701,7 @@
                 [
                     "call",
                     "backDistance 距离 %n 功率 %n",
-                    "-4000",
+                    "-3200",
                     "30"
                 ],
                 [
@@ -724,7 +719,7 @@
                 [
                     "call",
                     "runDistance 距离 %n 功率 %n",
-                    "1000",
+                    "1300",
                     "40"
                 ],
                 [
@@ -992,23 +987,32 @@
                     "100"
                 ]
             ]
+        ],
+        [
+            77,
+            1530,
+            [
+                [
+                    "patrollineTurn",
+                    "k_right",
+                    "-15",
+                    "15"
+                ],
+                [
+                    "patrollineInterroad",
+                    "k_T_intersection",
+                    "30",
+                    "0.1"
+                ]
+            ]
         ]
     ],
     "Version": "2",
     "programName": "P2",
     "scriptComments": [
         [
-            1067,
-            264,
-            200,
-            120,
-            true,
-            -1,
-            "跳舞+大跳水"
-        ],
-        [
-            1033,
-            1189,
+            1062,
+            1314,
             200,
             120,
             true,
@@ -1023,6 +1027,15 @@
             true,
             -1,
             "最后三个"
+        ],
+        [
+            1067,
+            264,
+            200,
+            120,
+            true,
+            -1,
+            "跳舞+大跳水"
         ]
     ],
     "variables": [
