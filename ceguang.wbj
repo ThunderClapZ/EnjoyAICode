@@ -1,0 +1,34 @@
+{
+    "App": "鲸鱼积木编程",
+    "Company": "WhalesBot",
+    "Controller": "AI_Module2",
+    "Edition": "standard",
+    "Scripts": [
+        [
+            580,
+            24,
+            [
+                [
+                    "main"
+                ],
+                [
+                    "patrollineInit_so",
+                    "A",
+                    "100",
+                    "B",
+                    "-100",
+                    "5"
+                ],
+                [
+                    "patrollineEnvironment"
+                ]
+            ]
+        ]
+    ],
+    "Version": "2",
+    "programName": "P3",
+    "scriptComments": [
+    ],
+    "variables": [
+    ]
+}

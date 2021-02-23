@@ -328,8 +328,26 @@
             ]
         ],
         [
-            516,
-            244,
+            41,
+            1498,
+            [
+                [
+                    "patrollineTurn",
+                    "k_right",
+                    "-15",
+                    "15"
+                ],
+                [
+                    "patrollineInterroad",
+                    "k_T_intersection",
+                    "30",
+                    "0.1"
+                ]
+            ]
+        ],
+        [
+            520,
+            260,
             [
                 [
                     "main"
@@ -487,7 +505,7 @@
                 [
                     "action_motor_distance_std",
                     "D",
-                    "40",
+                    "30",
                     "350"
                 ],
                 [
@@ -723,6 +741,10 @@
                     "40"
                 ],
                 [
+                    "action_reversemoto_so",
+                    "C"
+                ],
+                [
                     "patrollineButton"
                 ],
                 [
@@ -790,7 +812,7 @@
                     "action_motor_distance_std",
                     "C",
                     "20",
-                    "720"
+                    "800"
                 ],
                 [
                     "action_reversemoto_so",
@@ -853,37 +875,43 @@
                     "10"
                 ],
                 [
-                    "call",
-                    "runDistance 距离 %n 功率 %n",
-                    "250",
-                    "10"
-                ],
-                [
                     "action_motor_distance_std",
                     "C",
                     "20",
-                    "400"
-                ],
-                [
-                    "call",
-                    "runDistance 距离 %n 功率 %n",
-                    "630",
-                    "10"
+                    "520"
                 ],
                 [
                     "controlWait",
-                    "0.2"
+                    "0.1"
+                ],
+                [
+                    "call",
+                    "runDistance 距离 %n 功率 %n",
+                    "800",
+                    "10"
+                ],
+                [
+                    "action_reversemoto_so",
+                    "C"
                 ],
                 [
                     "action_motor_distance_std",
                     "C",
                     "20",
-                    "80"
+                    "40"
+                ],
+                [
+                    "action_reversemoto_so",
+                    "C"
+                ],
+                [
+                    "controlWait",
+                    "0.1"
                 ],
                 [
                     "call",
                     "backDistance 距离 %n 功率 %n",
-                    "-400",
+                    "-470",
                     "15"
                 ],
                 [
@@ -956,7 +984,7 @@
                 ],
                 [
                     "controlWait",
-                    "1"
+                    "0.1"
                 ],
                 [
                     "action_reversemoto_so",
@@ -965,7 +993,7 @@
                 [
                     "action_motor_distance_std",
                     "C",
-                    "20",
+                    "50",
                     "400"
                 ],
                 [
@@ -978,7 +1006,7 @@
                     "-20",
                     "B",
                     "-20",
-                    "450"
+                    "480"
                 ],
                 [
                     "call",
@@ -987,47 +1015,11 @@
                     "100"
                 ]
             ]
-        ],
-        [
-            77,
-            1530,
-            [
-                [
-                    "patrollineTurn",
-                    "k_right",
-                    "-15",
-                    "15"
-                ],
-                [
-                    "patrollineInterroad",
-                    "k_T_intersection",
-                    "30",
-                    "0.1"
-                ]
-            ]
         ]
     ],
     "Version": "2",
-    "programName": "P2",
+    "programName": "P1",
     "scriptComments": [
-        [
-            1062,
-            1314,
-            200,
-            120,
-            true,
-            -1,
-            "游泳+小跳水"
-        ],
-        [
-            955,
-            2249,
-            200,
-            120,
-            true,
-            -1,
-            "最后三个"
-        ],
         [
             1067,
             264,
@@ -1036,6 +1028,24 @@
             true,
             -1,
             "跳舞+大跳水"
+        ],
+        [
+            1030,
+            1214,
+            200,
+            120,
+            true,
+            -1,
+            "游泳+小跳水"
+        ],
+        [
+            975,
+            2268,
+            200,
+            120,
+            true,
+            -1,
+            "最后三个"
         ]
     ],
     "variables": [
